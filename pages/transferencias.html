@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transferencias - SantaCruzPay</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <a href="../index.html" class="logo">
+      <i class="fas fa-coins"></i> SantaCruzPay
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contactos.html">Contacto</a>
+    </nav>
+    <button id="darkToggle" aria-label="Modo oscuro">
+      <i class="fas fa-moon"></i>
+    </button>
+  </header>
+
+  <main class="contact-form-section" style="min-height:70vh; padding: 2rem;">
+    <h1>Realiza tu transferencia</h1>
+    <form id="transferForm" class="contact-form" style="max-width:400px; margin:auto;" data-aos>
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <select id="paisDestino" required>
+        <option value="" disabled selected>País de destino</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Chile">Chile</option>
+        <option value="Perú">Perú</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+      </select>
+      <input type="number" id="monto" placeholder="Monto a enviar (USD)" min="1" step="any" required />
+      <select id="metodoPago" required>
+        <option value="" disabled selected>Método de pago</option>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Criptomoneda">Criptomoneda</option>
+        <option value="Transferencia bancaria">Transferencia bancaria</option>
+      </select>
+      <button type="submit" class="btn" style="margin-top: 1rem;">Enviar transferencia</button>
+    </form>
+
+    <div id="mensajeConfirmacion" class="transfer-confirmation" style="display:none;">
+      <i class="fas fa-check-circle fa-3x" style="color: green; margin-bottom: 15px;"></i>
+      <p>¡Transferencia enviada con éxito! Gracias por confiar en SantaCruzPay.</p>
+      <button id="resetTransfer" class="btn" style="margin-top: 1rem;">Realizar otra transferencia</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 SantaCruzPay. Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/591XXXXXXXX" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="../scripts/script.js"></script>
+</body>
+</html>

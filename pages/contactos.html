@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - SantaCruzPay</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- Loader opcional -->
+  <div id="loader" class="loader"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <a href="/index.html" class="logo">
+      <i class="fas fa-coins"></i> SantaCruzPay
+    </a>
+    <nav class="nav-links">
+      <a href="/index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contactos.html">Contacto</a>
+    </nav>
+    <button id="darkToggle" aria-label="Modo oscuro">
+      <i class="fas fa-moon"></i>
+    </button>
+  </header>
+
+  <!-- Sección de contacto -->
+  <section class="hero">
+    <div class="hero-content" data-aos="fade">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes dudas? Escríbenos y te responderemos pronto.</p>
+    </div>
+    <div class="hero-img" data-aos="fade">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1250/1250620.png"
+        alt="Contacto"
+      />
+    </div>
+  </section>
+
+  <section class="contact-form-section" data-aos="fade">
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+      <input type="email" id="correo" placeholder="Tu correo electrónico" required />
+      <textarea id="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 SantaCruzPay. Todos los derechos reservados.</p>
+  </footer>
+
+  <a
+    href="https://wa.me/591XXXXXXXX"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="WhatsApp"
+    ><i class="fab fa-whatsapp"></i
+  ></a>
+
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
